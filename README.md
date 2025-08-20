@@ -52,19 +52,18 @@ yaml
 
 ▶️ Usage
 1. Prepare LinkedIn cookies
-
-  - Log in to LinkedIn manually in your browser.
-  - Export cookies (e.g., using a browser extension).
-  - Save them into a file named cookies.pkl.
+   - Log in to LinkedIn manually in your browser.
+   - Export cookies (e.g., using a browser extension).
+   - Save them into a file named cookies.pkl.
 
 2. Run the scraper:
    ```bash
    python main.py
 
 3. Output
-Scraped data will be saved into CSV files:
-  - linkedin_jobs_xxx.csv (job data)
-  - failed_jobs.csv (failed job IDs)
+   Scraped data will be saved into CSV files:
+      - linkedin_jobs_xxx.csv (job data)
+      - failed_jobs.csv (failed job IDs)
 
 📊 Example Analysis
 Once you collect ~1000 job postings, you can analyze:
