@@ -1,23 +1,96 @@
 # LinkedIn Job Scraper (Sweden)
 
-A Python + Selenium project for scraping job postings from LinkedIn (Sweden region).  
-It supports automatic login with cookies, pagination, retry handling, partial saving, and exporting results to CSV.
+A Python project to scrape job postings from **LinkedIn Sweden** using Selenium.  
+The scraper extracts job details (title, company, location, posted date, application numbers, job requirements, description, and URL) and saves them to CSV files for further analysis.
 
 ---
 
-## ✨ Features
-- Auto login to LinkedIn (via saved cookies)
-- Scrape job postings across multiple pages
-- Extract job details: title, company, location, posting time, applicants, requirements, description, and URL
-- Translate job requirements into English
-- Failed jobs are recorded for re-scraping later
-- Results saved as timestamped CSV files
+## 🚀 Features
+- Scrape job postings by pages (25 jobs per page).
+- Extract key details:
+  - Job Title  
+  - Company  
+  - Location  
+  - Posted Time  
+  - Application Numbers  
+  - Job Details (translated into English)  
+  - Job Description  
+  - URL  
+- Automatic CSV saving (supports incremental saving every 25 jobs).
+- Failed jobs are logged separately for later re-scraping.
+- Support for **cookie-based login** to avoid repeated manual logins.
 
 ---
 
-## 📦 Installation
-Make sure you are using **Python 3.9+**.
-Dependencies include: selenium，pandas， deep-translator
+## 📂 Project Structure
+.
+├── get_data.py # Extract job IDs, scrape job details, save results to CSV
+├── log_in.py # Cookie-based LinkedIn login
+├── main.py # Main script to run the scraper
+├── set_up.py # Selenium WebDriver setup
+├── requirements.txt # Dependencies
+├── .gitignore # Files to ignore (cookies, CSV outputs, venv, etc.)
+└── README.md # Project documentation
+
+yaml
+---
+
+## ⚙️ Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/linkedin-job-scraper.git
+   cd linkedin-job-scraper
+Create and activate a virtual environment:
+
+bash
+python -m venv venv
+source venv/bin/activate   # Linux / macOS
+venv\Scripts\activate      # Windows
 Install dependencies:
-```bash
+bash
 pip install -r requirements.txt
+
+▶️ Usage
+Prepare LinkedIn cookies
+
+Log in to LinkedIn manually in your browser.
+
+Export cookies (e.g., using a browser extension).
+
+Save them into a file named cookies.pkl.
+
+Run the scraper:
+bash
+python main.py
+Output
+
+Scraped data will be saved into CSV files:
+
+linkedin_jobs_xxx.csv (job data)
+
+failed_jobs.csv (failed job IDs)
+
+📊 Example Analysis
+Once you collect ~1000 job postings, you can analyze:
+
+📍 Top hiring locations (e.g., Stockholm, Gothenburg, Malmö).
+
+🏢 Top hiring companies in Sweden.
+
+📈 Most demanded job titles and trends.
+
+💡 Required skills & requirements (translated to English).
+
+⏳ Posting trends (how long jobs stay open).
+
+⚠️ Disclaimer
+This project is for educational and research purposes only.
+
+Scraping LinkedIn may violate their Terms of Service. Use responsibly.
+
+The author is not responsible for any misuse of this project.
+
+📌 License
+MIT License.
+Free to use and modify, but please give credit to the author.
