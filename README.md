@@ -41,15 +41,14 @@ yaml
    ```bash
    git clone https://github.com/your-username/linkedin-job-scraper.git
    cd linkedin-job-scraper
-Create and activate a virtual environment:
-
-bash
-python -m venv venv
-source venv/bin/activate   # Linux / macOS
-venv\Scripts\activate      # Windows
-Install dependencies:
-bash
-pip install -r requirements.txt
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # Linux / macOS
+   venv\Scripts\activate      # Windows
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
 ▶️ Usage
 Prepare LinkedIn cookies
