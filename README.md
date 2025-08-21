@@ -24,20 +24,20 @@ The scraper extracts job details (title, company, location, posted date, applica
 ---
 
 ## 📂 Project Structure
-
-.
-├── data
-│   └── linkedin_jobs_250809_final # store the final results, which contains 1000 rows
-├── linkedin_scraper
-│   ├── get_data.py # Extract job IDs, scrape job details, save results to CSV
-│   ├── log_in.py # Cookie-based LinkedIn login
-│   ├── main.py # Main script to run the scraper
-│   └── set_up.py # Selenium WebDriver setup
-├── output
-│   └── linkedin_jobs_20250810_003215_final.csv # store sample results, which contains 175 rows
-├── .gitignore # Files to ignore (cookies, CSV outputs, venv, etc.)
-├── README.md # Project documentation
-└── requirements.txt # Dependencies
+    ```text
+    .
+    ├── data
+    │   └── linkedin_jobs_250809_final # store the final results, which contains 1000 rows
+    ├── linkedin_scraper
+    │   ├── get_data.py # Extract job IDs, scrape job details, save results to CSV
+    │   ├── log_in.py # Cookie-based LinkedIn login
+    │   ├── main.py # Main script to run the scraper
+    │   └── set_up.py # Selenium WebDriver setup
+    ├── output
+    │   └── linkedin_jobs_20250810_003215_final.csv # store sample results, which contains 175 rows
+    ├── .gitignore # Files to ignore (cookies, CSV outputs, venv, etc.)
+    ├── README.md # Project documentation
+    └── requirements.txt # Dependencies
 
 ---
 
