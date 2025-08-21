@@ -205,3 +205,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Data output
+*.csv
+*.xlsx
+*.json
+
+# Selenium cookies and session
+cookies.pkl
+cookies.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE configs
+.vscode/
+.idea/
+
