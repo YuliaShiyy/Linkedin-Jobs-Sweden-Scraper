@@ -39,6 +39,7 @@ The scraper extracts job details (title, company, location, posted date, applica
 ├── README.md # Project documentation
 └── requirements.txt # Dependencies
 
+---
 
 yaml
 ---
