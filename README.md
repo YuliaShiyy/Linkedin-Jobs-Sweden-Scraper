@@ -41,9 +41,6 @@ The scraper extracts job details (title, company, location, posted date, applica
 
 ---
 
-yaml
----
-
 ## ⚙️ Installation
 
 1. Clone this repository:
