@@ -1,3 +1,4 @@
+markdown
 # LinkedIn Job Scraper (Sweden)
 
 A Python project to scrape job postings from **LinkedIn Sweden** using Selenium.  
