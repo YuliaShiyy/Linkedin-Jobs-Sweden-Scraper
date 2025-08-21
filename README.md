@@ -24,7 +24,6 @@ The scraper extracts job details (title, company, location, posted date, applica
 ---
 
 ## 📂 Project Structure
-    ```text
     .
     ├── data
     │   └── linkedin_jobs_250809_final # store the final results, which contains 1000 rows
