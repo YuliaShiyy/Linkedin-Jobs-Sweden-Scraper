@@ -74,15 +74,15 @@ The scraper extracts job details (title, company, location, posted date, applica
 📊 Example Analysis
 Once you collect ~1000 job postings, you can analyze:
 
-📍 Top hiring locations (e.g., Stockholm, Gothenburg, Malmö).
+    📍 Top hiring locations (e.g., Stockholm, Gothenburg, Malmö).
 
-🏢 Top hiring companies in Sweden.
+    🏢 Top hiring companies in Sweden.
 
-📈 Most demanded job titles and trends.
+    📈 Most demanded job titles and trends.
 
-💡 Required skills & requirements (translated to English).
+    💡 Required skills & requirements (translated to English).
 
-⏳ Posting trends (how long jobs stay open).
+    ⏳ Posting trends (how long jobs stay open).
 
 ⚠️ Disclaimer
 This project is for educational and research purposes only.
