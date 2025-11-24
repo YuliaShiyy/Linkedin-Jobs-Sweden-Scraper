@@ -10,14 +10,14 @@ The tool extracts structured job information, enriches the text with LLM-powered
 🔍 Core Scraping
 - Paginated scraping (25 jobs per page)
 - Extracts:
-  -Job Title
-  -Company
-  -Location
-  -Posted Time
-  -Number of Applicants
-  -Job Requirements / Key Details
-  -Full Job Description
-  -Job URL
+  - Job Title
+  - Company
+  - Location
+  - Posted Time
+  - Number of Applicants
+  - Job Requirements / Key Details
+  - Full Job Description
+  - Job URL
 
 🤖 LLM-Assisted Enrichment (Optional / Pluggable)
 
