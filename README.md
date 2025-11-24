@@ -27,6 +27,7 @@ The tool extracts structured job information, enriches the text with LLM-powered
 - Modular design (llm_enrichment.py) allows:
   - Real LLM API (OpenAI/DeepSeek/etc.)
   - Or rule-based mock enrichment (cost-free)
+
 💾 Data Handling
 - Auto-saving after every page (25 rows)
 - Failed job IDs stored separately for later re-run
@@ -46,7 +47,8 @@ Cookie-based login (no repeated manual login)
     │   ├── get_data.py # Extract job IDs, scrape job details, save results to CSV
     │   ├── log_in.py # Cookie-based LinkedIn login
     │   ├── main.py # Main script to run the scraper
-    │   └── set_up.py # Selenium WebDriver setup
+    │   ├── set_up.py # Selenium WebDriver setup
+    │   └── llm_enrichment.py # LLM-based text cleanup & enrichment
     ├── output
     │   └── linkedin_jobs_20250810_003215_final.csv # store sample results, which contains 175 rows
     ├── .gitignore # Files to ignore (cookies, CSV outputs, venv, etc.)
