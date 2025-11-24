@@ -20,33 +20,20 @@ The tool extracts structured job information, enriches the text with LLM-powered
   - Job URL
 
 🤖 LLM-Assisted Enrichment (Optional / Pluggable)
-
--Title normalization
-
--Job category classification
-
--Skill extraction from unstructured descriptions
-
--Text cleanup & translation support
-
--Modular design (llm_enrichment.py) allows:
-
-  -Real LLM API (OpenAI/DeepSeek/etc.)
-
-  -Or rule-based mock enrichment (cost-free)
-
+- Title normalization
+- Job category classification
+- Skill extraction from unstructured descriptions
+- Text cleanup & translation support
+- Modular design (llm_enrichment.py) allows:
+  - Real LLM API (OpenAI/DeepSeek/etc.)
+  - Or rule-based mock enrichment (cost-free)
 💾 Data Handling
-
--Auto-saving after every page (25 rows)
-
--Failed job IDs stored separately for later re-run
-
--Output stored with timestamped filenames
-
--Fault-tolerant scrapers with retries & safe extraction
+- Auto-saving after every page (25 rows)
+- Failed job IDs stored separately for later re-run
+- Output stored with timestamped filenames
+- Fault-tolerant scrapers with retries & safe extraction
 
 🔐 Authentication
-
 Cookie-based login (no repeated manual login)
 
 ---
