@@ -1,25 +1,53 @@
 markdown
 # LinkedIn Job Scraper (Sweden)
 
-A Python project to scrape job postings from **LinkedIn Sweden** using Selenium.  
-The scraper extracts job details (title, company, location, posted date, application numbers, job requirements, description, and URL) and saves them to CSV files for further analysis.
+A Python-based scraper for collecting LinkedIn Sweden job postings using Selenium.
+The tool extracts structured job information, enriches the text with LLM-powered parsing, and exports cleaned datasets for downstream analytics such as market trend analysis, skill extraction, and hiring insights.
 
 ---
 
 ## 🚀 Features
-- Scrape job postings by pages (25 jobs per page).
-- Extract key details:
-  - Job Title  
-  - Company  
-  - Location  
-  - Posted Time  
-  - Application Numbers  
-  - Job Details (translated into English)  
-  - Job Description  
-  - URL  
-- Automatic CSV saving (supports incremental saving every 25 jobs).
-- Failed jobs are logged separately for later re-scraping.
-- Support for **cookie-based login** to avoid repeated manual logins.
+🔍 Core Scraping
+- Paginated scraping (25 jobs per page)
+- Extracts:
+  -Job Title
+  -Company
+  -Location
+  -Posted Time
+  -Number of Applicants
+  -Job Requirements / Key Details
+  -Full Job Description
+  -Job URL
+
+🤖 LLM-Assisted Enrichment (Optional / Pluggable)
+
+-Title normalization
+
+-Job category classification
+
+-Skill extraction from unstructured descriptions
+
+-Text cleanup & translation support
+
+-Modular design (llm_enrichment.py) allows:
+
+  -Real LLM API (OpenAI/DeepSeek/etc.)
+
+  -Or rule-based mock enrichment (cost-free)
+
+💾 Data Handling
+
+-Auto-saving after every page (25 rows)
+
+-Failed job IDs stored separately for later re-run
+
+-Output stored with timestamped filenames
+
+-Fault-tolerant scrapers with retries & safe extraction
+
+🔐 Authentication
+
+Cookie-based login (no repeated manual login)
 
 ---
 
